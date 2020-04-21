@@ -14,5 +14,5 @@ while true
     # Every 14 seconds, update the server time
     sleep 14
     echo "Updated time: D:${day} H:${hour} M:${min}"
-    screen -S 7days_telnet -X stuff "settime ${day} ${hour} ${min}^M"
+    screen -S 7days_bgcommands -X stuff "settime ${day} ${hour} ${min}^M"
 done
