@@ -1,1 +1,0 @@
-screen -S 7days_bgcommands -X stuff "spawnairdrop^M"

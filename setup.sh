@@ -21,4 +21,4 @@ echo "$CONFIG" >./7daystodie/serverconfig.xml
 # We can't do this with timesync b/c Cronjobs don't have subminute precision
 # Instead time sync is a script with a sleep loop executed by sv_start.sh
 crontab -r # First clear all existing jobs
-{ crontab -l; echo "0 8 * * * sv_daily.sh"; } | crontab - # Runs the daily scripts at 8AM each day
+{ crontab -l; echo "0 8 * * * ~/sv_scripts/sv_airdrop.sh"; } | crontab - # Runs an airdrop at the specified time
