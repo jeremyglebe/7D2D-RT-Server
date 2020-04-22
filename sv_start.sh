@@ -12,4 +12,4 @@ screen -S 7days_bgcommands -X stuff "telnet localhost 8081^M"
 
 # Start Time Sync
 sleep 10
-screen -S 7days_timesync -X stuff "./sv_timesync.sh^M"
+screen -S 7days_timesync -X stuff "./sv_scripts/sv_timesync.sh^M"
